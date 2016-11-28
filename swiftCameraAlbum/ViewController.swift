@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var cameraView: UIView! //相机显示
     @IBOutlet weak var focusView: UIImageView! //聚焦图片
+    @IBOutlet weak var takePicListCollectionView: TakePicListCollectionView!//展示列表
+    fileprivate var imgArr: [UIImage] = [UIImage]() //拍照的图片
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +28,21 @@ class ViewController: UIViewController {
     }
     
     
+    
+    @IBAction func getAlbumListClick(_ sender: UIButton) {
+        
+    }
+  
+    
+    // MARK:- 拍摄照片
+    @IBAction func takePicClick(_ sender: UIButton) {
+       
+        DCCameraAlbum.shareCamera.takePhoto { [unowned self] (image) in
+            self.imgArr.append(image)
+            self.takePicListCollectionView.imgArr = self.imgArr
+            
+        }
+    }
     
     // MARK:- 闪光灯管理
     @IBAction func flashSegment(_ sender: UISegmentedControl) {

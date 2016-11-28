@@ -50,7 +50,7 @@
                                     <constraint firstItem="Uqf-I4-nIR" firstAttribute="centerY" secondItem="FQ7-Lg-fbO" secondAttribute="centerY" id="Xbg-bk-MGL"/>
                                 </constraints>
                             </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bWe-08-c2A" userLabel="图片展示">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="bWe-08-c2A" userLabel="图片展示" customClass="TakePicListCollectionView" customModule="swiftCameraAlbum" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="517" width="375" height="100"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="YiD-5D-48k">
@@ -60,13 +60,14 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="VkS-b7-Q4y">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="VkS-b7-Q4y">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </view>
+                                        <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -80,12 +81,27 @@
                                             <constraint firstAttribute="width" constant="80" id="dkj-Ds-LSJ"/>
                                         </constraints>
                                         <state key="normal" title="拍照"/>
+                                        <connections>
+                                            <action selector="takePicClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vC0-1N-GbD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="auH-lq-wkK">
+                                        <rect key="frame" x="0.0" y="0.0" width="62" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="相册列表"/>
+                                        <connections>
+                                            <action selector="getAlbumListClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDP-4g-CVk"/>
+                                            <segue destination="QVy-SK-YRp" kind="showDetail" id="geB-zr-66i"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="MFh-3X-2my" secondAttribute="bottom" id="6Ut-Sv-hqM"/>
+                                    <constraint firstItem="auH-lq-wkK" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="Dr1-lG-NWU"/>
                                     <constraint firstItem="MFh-3X-2my" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="Nq5-LD-uu3"/>
+                                    <constraint firstItem="auH-lq-wkK" firstAttribute="leading" secondItem="Xt4-sr-TJk" secondAttribute="leading" id="X1c-NZ-WDg"/>
+                                    <constraint firstAttribute="bottom" secondItem="auH-lq-wkK" secondAttribute="bottom" id="wyI-Dw-2sb"/>
                                     <constraint firstItem="MFh-3X-2my" firstAttribute="centerX" secondItem="Xt4-sr-TJk" secondAttribute="centerX" id="xPB-j1-hI5"/>
                                 </constraints>
                             </view>
@@ -109,11 +125,40 @@
                     <connections>
                         <outlet property="cameraView" destination="FQ7-Lg-fbO" id="wJb-I5-2jQ"/>
                         <outlet property="focusView" destination="Uqf-I4-nIR" id="lmP-6L-3mq"/>
+                        <outlet property="takePicListCollectionView" destination="bWe-08-c2A" id="R7d-Vy-kDq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
+        </scene>
+        <!--Table View Controller-->
+        <scene sceneID="486-8P-gwe">
+            <objects>
+                <tableViewController id="QVy-SK-YRp" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yEi-Br-xou">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BdP-BE-Q6a">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BdP-BE-Q6a" id="B9K-lb-Ezt">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QVy-SK-YRp" id="JCw-y3-8eU"/>
+                            <outlet property="delegate" destination="QVy-SK-YRp" id="9vp-HQ-9VJ"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A6a-sC-h4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-390" y="870"/>
         </scene>
     </scenes>
     <resources>

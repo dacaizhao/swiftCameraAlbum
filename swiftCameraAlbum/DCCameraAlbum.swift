@@ -283,7 +283,7 @@ extension DCCameraAlbum:UIGestureRecognizerDelegate{
         //闪光灯
         do{ try d.lockForConfiguration() }catch{ }
         if d.hasFlash == false { return }
-        d.flashMode = AVCaptureFlashMode.on
+        d.flashMode = AVCaptureFlashMode.auto
         d.unlockForConfiguration()
     }
     

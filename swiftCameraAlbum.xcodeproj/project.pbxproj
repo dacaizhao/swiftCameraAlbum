@@ -13,6 +13,9 @@
 		5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591406391DEC02D800FC3702 /* Assets.xcassets */; };
 		5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */; };
 		591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406441DEC050000FC3702 /* DCCameraAlbum.swift */; };
+		591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406461DEC198900FC3702 /* TakePicListCollectionView.swift */; };
+		5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */; };
+		5914064B1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591406491DEC1EFB00FC3702 /* TakePicListCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		5914063C1DEC02D800FC3702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5914063E1DEC02D800FC3702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		591406441DEC050000FC3702 /* DCCameraAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCameraAlbum.swift; sourceTree = "<group>"; };
+		591406461DEC198900FC3702 /* TakePicListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicListCollectionView.swift; sourceTree = "<group>"; };
+		591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakePicListCollectionViewCell.swift; path = ../TakePicListCollectionViewCell.swift; sourceTree = "<group>"; };
+		591406491DEC1EFB00FC3702 /* TakePicListCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TakePicListCollectionViewCell.xib; path = ../TakePicListCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,9 +62,12 @@
 		591406311DEC02D800FC3702 /* swiftCameraAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				591406441DEC050000FC3702 /* DCCameraAlbum.swift */,
 				591406321DEC02D800FC3702 /* AppDelegate.swift */,
 				591406341DEC02D800FC3702 /* ViewController.swift */,
+				591406441DEC050000FC3702 /* DCCameraAlbum.swift */,
+				591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */,
+				591406491DEC1EFB00FC3702 /* TakePicListCollectionViewCell.xib */,
+				591406461DEC198900FC3702 /* TakePicListCollectionView.swift */,
 				591406361DEC02D800FC3702 /* Main.storyboard */,
 				591406391DEC02D800FC3702 /* Assets.xcassets */,
 				5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */,
@@ -129,6 +138,7 @@
 			files = (
 				5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */,
 				5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */,
+				5914064B1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.xib in Resources */,
 				591406381DEC02D800FC3702 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -142,7 +152,9 @@
 			files = (
 				591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */,
 				591406351DEC02D800FC3702 /* ViewController.swift in Sources */,
+				591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */,
 				591406331DEC02D800FC3702 /* AppDelegate.swift in Sources */,
+				5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
