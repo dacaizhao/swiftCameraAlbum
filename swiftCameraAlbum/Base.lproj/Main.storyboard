@@ -107,13 +107,25 @@
                                             <action selector="getAlbumListClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDP-4g-CVk"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RuC-Hd-8ph">
+                                        <rect key="frame" x="262" y="0.0" width="113" height="50"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                        <state key="normal" title="指定或者默认的相册夹"/>
+                                        <connections>
+                                            <action selector="getAlbumThumb:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pDe-mH-Vmm"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RuC-Hd-8ph" secondAttribute="bottom" id="3pl-pB-cDg"/>
                                     <constraint firstAttribute="bottom" secondItem="MFh-3X-2my" secondAttribute="bottom" id="6Ut-Sv-hqM"/>
                                     <constraint firstItem="auH-lq-wkK" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="Dr1-lG-NWU"/>
+                                    <constraint firstAttribute="trailing" secondItem="RuC-Hd-8ph" secondAttribute="trailing" id="Ha1-5v-t39"/>
                                     <constraint firstItem="MFh-3X-2my" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="Nq5-LD-uu3"/>
                                     <constraint firstItem="auH-lq-wkK" firstAttribute="leading" secondItem="Xt4-sr-TJk" secondAttribute="leading" id="X1c-NZ-WDg"/>
+                                    <constraint firstItem="RuC-Hd-8ph" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="blh-cE-a24"/>
                                     <constraint firstAttribute="bottom" secondItem="auH-lq-wkK" secondAttribute="bottom" id="wyI-Dw-2sb"/>
                                     <constraint firstItem="MFh-3X-2my" firstAttribute="centerX" secondItem="Xt4-sr-TJk" secondAttribute="centerX" id="xPB-j1-hI5"/>
                                 </constraints>

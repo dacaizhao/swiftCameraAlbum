@@ -15,6 +15,12 @@
 		591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406441DEC050000FC3702 /* DCCameraAlbum.swift */; };
 		591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406461DEC198900FC3702 /* TakePicListCollectionView.swift */; };
 		5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */; };
+		591406501DEC2E6100FC3702 /* DCAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */; };
+		591406511DEC2E6100FC3702 /* DCAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */; };
+		591406561DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */; };
+		591406571DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */; };
+		591406581DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */; };
+		591406591DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +34,12 @@
 		591406441DEC050000FC3702 /* DCCameraAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCameraAlbum.swift; sourceTree = "<group>"; };
 		591406461DEC198900FC3702 /* TakePicListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicListCollectionView.swift; sourceTree = "<group>"; };
 		591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakePicListCollectionViewCell.swift; path = ../TakePicListCollectionViewCell.swift; sourceTree = "<group>"; };
+		5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumListViewController.swift; sourceTree = "<group>"; };
+		5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumViewController.swift; sourceTree = "<group>"; };
+		591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +73,38 @@
 			isa = PBXGroup;
 			children = (
 				591406321DEC02D800FC3702 /* AppDelegate.swift */,
-				591406341DEC02D800FC3702 /* ViewController.swift */,
 				591406441DEC050000FC3702 /* DCCameraAlbum.swift */,
-				591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */,
-				591406461DEC198900FC3702 /* TakePicListCollectionView.swift */,
+				591406341DEC02D800FC3702 /* ViewController.swift */,
+				5914065B1DEC3B8100FC3702 /* AlbumView */,
+				5914065A1DEC3B4300FC3702 /* takepic */,
 				591406361DEC02D800FC3702 /* Main.storyboard */,
 				591406391DEC02D800FC3702 /* Assets.xcassets */,
 				5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */,
 				5914063E1DEC02D800FC3702 /* Info.plist */,
 			);
 			path = swiftCameraAlbum;
+			sourceTree = "<group>";
+		};
+		5914065A1DEC3B4300FC3702 /* takepic */ = {
+			isa = PBXGroup;
+			children = (
+				591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */,
+				591406461DEC198900FC3702 /* TakePicListCollectionView.swift */,
+			);
+			name = takepic;
+			sourceTree = "<group>";
+		};
+		5914065B1DEC3B8100FC3702 /* AlbumView */ = {
+			isa = PBXGroup;
+			children = (
+				5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */,
+				5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */,
+				591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */,
+				591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */,
+				591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */,
+				591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */,
+			);
+			name = AlbumView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -134,7 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */,
+				591406571DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib in Resources */,
 				5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */,
+				591406591DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib in Resources */,
 				591406381DEC02D800FC3702 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -147,8 +183,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */,
+				591406561DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift in Sources */,
 				591406351DEC02D800FC3702 /* ViewController.swift in Sources */,
 				591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */,
+				591406501DEC2E6100FC3702 /* DCAlbumListViewController.swift in Sources */,
+				591406581DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift in Sources */,
+				591406511DEC2E6100FC3702 /* DCAlbumViewController.swift in Sources */,
 				591406331DEC02D800FC3702 /* AppDelegate.swift in Sources */,
 				5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */,
 			);

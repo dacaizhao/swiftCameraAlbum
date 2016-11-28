@@ -8,6 +8,10 @@
 
 import UIKit
 
+// MARK: - 定义一些常量
+let kScreenW  = UIScreen.main.bounds.size.width
+let kScreenH  = UIScreen.main.bounds.size.height
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

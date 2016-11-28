@@ -27,16 +27,36 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func getAlbumThumb(_ sender: UIButton) {
+        
+        //默认的就是第一个
+        //DCCameraAlbum.shareCamera.getAlbumItemFetchResultsDefault(thumbnailSize: <#T##CGSize#>, finishedCallback: <#T##([UIImage]) -> ()#>)
+        
+        //你还可以这样做 你可以查看任何一个相册  需要一定的等待时间 所以是回调
+        let itemArr = DCCameraAlbum.shareCamera.getAlbumItem()
+        let resulet  = itemArr.first?.fetchResult
+        let size = CGSize(width: 100, height: 100)
+        DCCameraAlbum.shareCamera.getAlbumItemFetchResults(assetsFetchResults: resulet!, thumbnailSize: size) { [unowned self] (imgarr) in
+            
+            let vc = DCAlbumListViewController()
+            vc.imgArr = imgarr
+            self.present(vc, animated: true, completion: nil)
+            
+        }
+    }
     
-    
+    // MARK:- 获取相册列表
     @IBAction func getAlbumListClick(_ sender: UIButton) {
+        let vc = DCAlbumViewController()
+        vc.dcAlbumItem =  DCCameraAlbum.shareCamera.getAlbumItem()
+        present(vc, animated: true, completion: nil)
         
     }
-  
+    
     
     // MARK:- 拍摄照片
     @IBAction func takePicClick(_ sender: UIButton) {
-       
+        
         DCCameraAlbum.shareCamera.takePhoto { [unowned self] (image) in
             self.imgArr.append(image)
             self.takePicListCollectionView.imgArr = self.imgArr
@@ -57,8 +77,5 @@ class ViewController: UIViewController {
             break
         }
     }
-    
-    
-    
 }
 
