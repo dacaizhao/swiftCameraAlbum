@@ -25,7 +25,7 @@ class TakePicListCollectionView: UICollectionView {
         dataSource = self
         delegate = self
         self.backgroundColor = UIColor.black
-        self.register(UINib(nibName: "TakePicListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: kCellID)
+        //self.register(UINib(nibName: "TakePicListCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: kCellID)
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         layout.itemSize = CGSize(width: 100, height: 100)
         layout.scrollDirection = .horizontal

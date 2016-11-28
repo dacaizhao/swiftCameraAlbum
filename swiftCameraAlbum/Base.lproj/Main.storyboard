@@ -60,18 +60,32 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="VkS-b7-Q4y">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="kCellID" id="VkS-b7-Q4y" customClass="TakePicListCollectionViewCell" customModule="swiftCameraAlbum" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                             <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fti-lx-QZj">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                </imageView>
+                                            </subviews>
                                         </view>
                                         <color key="backgroundColor" red="0.5" green="0.0" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="fti-lx-QZj" secondAttribute="bottom" id="6fx-9z-5Nt"/>
+                                            <constraint firstItem="fti-lx-QZj" firstAttribute="leading" secondItem="VkS-b7-Q4y" secondAttribute="leading" id="Ny9-f0-QUh"/>
+                                            <constraint firstAttribute="trailing" secondItem="fti-lx-QZj" secondAttribute="trailing" id="d7l-A6-Tva"/>
+                                            <constraint firstItem="fti-lx-QZj" firstAttribute="top" secondItem="VkS-b7-Q4y" secondAttribute="top" id="rzT-dg-bLN"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="img" destination="fti-lx-QZj" id="Log-GK-LSm"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt4-sr-TJk">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xt4-sr-TJk" userLabel="底部">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MFh-3X-2my">
@@ -91,11 +105,10 @@
                                         <state key="normal" title="相册列表"/>
                                         <connections>
                                             <action selector="getAlbumListClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yDP-4g-CVk"/>
-                                            <segue destination="QVy-SK-YRp" kind="showDetail" id="geB-zr-66i"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="MFh-3X-2my" secondAttribute="bottom" id="6Ut-Sv-hqM"/>
                                     <constraint firstItem="auH-lq-wkK" firstAttribute="top" secondItem="Xt4-sr-TJk" secondAttribute="top" id="Dr1-lG-NWU"/>
@@ -131,34 +144,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="116" y="122.78860569715144"/>
-        </scene>
-        <!--Table View Controller-->
-        <scene sceneID="486-8P-gwe">
-            <objects>
-                <tableViewController id="QVy-SK-YRp" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="yEi-Br-xou">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="BdP-BE-Q6a">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="BdP-BE-Q6a" id="B9K-lb-Ezt">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
-                                    <autoresizingMask key="autoresizingMask"/>
-                                </tableViewCellContentView>
-                            </tableViewCell>
-                        </prototypes>
-                        <connections>
-                            <outlet property="dataSource" destination="QVy-SK-YRp" id="JCw-y3-8eU"/>
-                            <outlet property="delegate" destination="QVy-SK-YRp" id="9vp-HQ-9VJ"/>
-                        </connections>
-                    </tableView>
-                </tableViewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="A6a-sC-h4Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-390" y="870"/>
         </scene>
     </scenes>
     <resources>

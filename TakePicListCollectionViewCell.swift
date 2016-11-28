@@ -9,6 +9,7 @@
 import UIKit
 
 class TakePicListCollectionViewCell: UICollectionViewCell {
+
     @IBOutlet weak var img: UIImageView!
 
     override func awakeFromNib() {
