@@ -308,6 +308,12 @@ extension DCCameraAlbum:UIGestureRecognizerDelegate{
     //添加上聚焦
     @objc func tipFunc(_ ges:UITapGestureRecognizer) {
         let currentPoint  = ges.location(in: currentView)
+        currentView.isUserInteractionEnabled = false
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) {
+            self.currentView.isUserInteractionEnabled = true
+        }
+        
         do{ try currentD.lockForConfiguration() }catch{ }
         if currentD.isFocusModeSupported(.autoFocus) {
             currentD.focusPointOfInterest = currentPoint
@@ -329,6 +335,8 @@ extension DCCameraAlbum:UIGestureRecognizerDelegate{
                 self.focusView.isHidden = true
             }
         }
+        
+        
     }
     
     func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
