@@ -27,11 +27,11 @@ class ViewController: UIViewController {
         
     }
     
+    
+    //获取指定的相册 需要一定回调时间
     @IBAction func getAlbumThumb(_ sender: UIButton) {
-        
         //默认的就是第一个
         //DCCameraAlbum.shareCamera.getAlbumItemFetchResultsDefault(thumbnailSize: <#T##CGSize#>, finishedCallback: <#T##([UIImage]) -> ()#>)
-        
         //你还可以这样做 你可以查看任何一个相册  需要一定的等待时间 所以是回调
         let itemArr = DCCameraAlbum.shareCamera.getAlbumItem()
         let resulet  = itemArr.first?.fetchResult
