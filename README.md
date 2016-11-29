@@ -19,16 +19,18 @@
 ######DCCameraAlbum.shareCamera.flashLamp(mode: .auto)
 
 ###获取的默认相册 需要一点时间开销 所以回调完成
-######DCCameraAlbum.shareCamera.getAlbumItemFetchResultsDefault(thumbnailSize: <#T##CGSize#>, finishedCallback: <#T##([UIImage]) -> ()#>)
+######DCCameraAlbum.shareCamera.getAlbumItemFetchResultsDefault(thumbnailSize: size) { (imgarr) in}
 
-//获取的指定相册  需要一点时间开销 所以回调完成
+###获取的指定相册  需要一点时间开销 所以回调完成
 ######let itemArr = DCCameraAlbum.shareCamera.getAlbumItem()
 ######let resulet  = itemArr.first?.fetchResult
 ######let size = CGSize(width: 100, height: 100)
 ######DCCameraAlbum.shareCamera.getAlbumItemFetchResults(assetsFetchResults: resulet!, thumbnailSize: size) { [unowned self] (imgarr) in }
 
+###获取单张图片信息
+######DCCameraAlbum.shareCamera.getOriginalPicture
 
-###获取单张图片信息等 权限判断等 自己去看代码吧
+###还有相机相册权限判断等 你可以自己去看一下,很简单!
 
 
 
