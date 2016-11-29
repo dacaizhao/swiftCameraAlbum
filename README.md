@@ -1,4 +1,5 @@
 # swiftCameraAlbum
+![](https://github.com/dacaizhao/swiftCameraAlbum/blob/master/swiftCameraAlbum/Assets.xcassets/zhaodacai.imageset/zhaodacai.png?raw=true)
 
 //启动照相机
 #DCCameraAlbum.shareCamera.start(view: cameraView, frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height-150))
