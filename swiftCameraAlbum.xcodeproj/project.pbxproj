@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		591163601DEDB4780001738D /* TakePicListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911635E1DEDB4780001738D /* TakePicListCollectionView.swift */; };
+		591163611DEDB4780001738D /* TakePicListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5911635F1DEDB4780001738D /* TakePicListCollectionViewCell.swift */; };
+		591163691DEDB4F60001738D /* DCAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591163631DEDB4F60001738D /* DCAlbumCollectionViewCell.swift */; };
+		5911636A1DEDB4F60001738D /* DCAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591163641DEDB4F60001738D /* DCAlbumCollectionViewCell.xib */; };
+		5911636B1DEDB4F60001738D /* DCAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591163651DEDB4F60001738D /* DCAlbumListViewController.swift */; };
+		5911636C1DEDB4F60001738D /* DCAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591163661DEDB4F60001738D /* DCAlbumTableViewCell.swift */; };
+		5911636D1DEDB4F60001738D /* DCAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591163671DEDB4F60001738D /* DCAlbumTableViewCell.xib */; };
+		5911636E1DEDB4F60001738D /* DCAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591163681DEDB4F60001738D /* DCAlbumViewController.swift */; };
 		591406331DEC02D800FC3702 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406321DEC02D800FC3702 /* AppDelegate.swift */; };
 		591406351DEC02D800FC3702 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406341DEC02D800FC3702 /* ViewController.swift */; };
 		591406381DEC02D800FC3702 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 591406361DEC02D800FC3702 /* Main.storyboard */; };
 		5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591406391DEC02D800FC3702 /* Assets.xcassets */; };
 		5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */; };
 		591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406441DEC050000FC3702 /* DCCameraAlbum.swift */; };
-		591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406461DEC198900FC3702 /* TakePicListCollectionView.swift */; };
-		5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */; };
-		591406501DEC2E6100FC3702 /* DCAlbumListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */; };
-		591406511DEC2E6100FC3702 /* DCAlbumViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */; };
-		591406561DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */; };
-		591406571DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */; };
-		591406581DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */; };
-		591406591DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5911635E1DEDB4780001738D /* TakePicListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicListCollectionView.swift; sourceTree = "<group>"; };
+		5911635F1DEDB4780001738D /* TakePicListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicListCollectionViewCell.swift; sourceTree = "<group>"; };
+		591163631DEDB4F60001738D /* DCAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
+		591163641DEDB4F60001738D /* DCAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
+		591163651DEDB4F60001738D /* DCAlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumListViewController.swift; sourceTree = "<group>"; };
+		591163661DEDB4F60001738D /* DCAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumTableViewCell.swift; sourceTree = "<group>"; };
+		591163671DEDB4F60001738D /* DCAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumTableViewCell.xib; sourceTree = "<group>"; };
+		591163681DEDB4F60001738D /* DCAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumViewController.swift; sourceTree = "<group>"; };
 		5914062F1DEC02D800FC3702 /* swiftCameraAlbum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftCameraAlbum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		591406321DEC02D800FC3702 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		591406341DEC02D800FC3702 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -32,14 +40,6 @@
 		5914063C1DEC02D800FC3702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5914063E1DEC02D800FC3702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		591406441DEC050000FC3702 /* DCCameraAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCameraAlbum.swift; sourceTree = "<group>"; };
-		591406461DEC198900FC3702 /* TakePicListCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakePicListCollectionView.swift; sourceTree = "<group>"; };
-		591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TakePicListCollectionViewCell.swift; path = ../TakePicListCollectionViewCell.swift; sourceTree = "<group>"; };
-		5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumListViewController.swift; sourceTree = "<group>"; };
-		5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumViewController.swift; sourceTree = "<group>"; };
-		591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumCollectionViewCell.swift; sourceTree = "<group>"; };
-		591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumCollectionViewCell.xib; sourceTree = "<group>"; };
-		591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCAlbumTableViewCell.swift; sourceTree = "<group>"; };
-		591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DCAlbumTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +53,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5911635D1DEDB4780001738D /* TakePic */ = {
+			isa = PBXGroup;
+			children = (
+				5911635E1DEDB4780001738D /* TakePicListCollectionView.swift */,
+				5911635F1DEDB4780001738D /* TakePicListCollectionViewCell.swift */,
+			);
+			path = TakePic;
+			sourceTree = "<group>";
+		};
+		591163621DEDB4F60001738D /* AlbumView */ = {
+			isa = PBXGroup;
+			children = (
+				591163631DEDB4F60001738D /* DCAlbumCollectionViewCell.swift */,
+				591163641DEDB4F60001738D /* DCAlbumCollectionViewCell.xib */,
+				591163651DEDB4F60001738D /* DCAlbumListViewController.swift */,
+				591163661DEDB4F60001738D /* DCAlbumTableViewCell.swift */,
+				591163671DEDB4F60001738D /* DCAlbumTableViewCell.xib */,
+				591163681DEDB4F60001738D /* DCAlbumViewController.swift */,
+			);
+			path = AlbumView;
+			sourceTree = "<group>";
+		};
 		591406261DEC02D800FC3702 = {
 			isa = PBXGroup;
 			children = (
@@ -72,39 +94,17 @@
 		591406311DEC02D800FC3702 /* swiftCameraAlbum */ = {
 			isa = PBXGroup;
 			children = (
-				591406321DEC02D800FC3702 /* AppDelegate.swift */,
 				591406441DEC050000FC3702 /* DCCameraAlbum.swift */,
+				591406321DEC02D800FC3702 /* AppDelegate.swift */,
 				591406341DEC02D800FC3702 /* ViewController.swift */,
-				5914065B1DEC3B8100FC3702 /* AlbumView */,
-				5914065A1DEC3B4300FC3702 /* takepic */,
+				591163621DEDB4F60001738D /* AlbumView */,
+				5911635D1DEDB4780001738D /* TakePic */,
 				591406361DEC02D800FC3702 /* Main.storyboard */,
 				591406391DEC02D800FC3702 /* Assets.xcassets */,
 				5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */,
 				5914063E1DEC02D800FC3702 /* Info.plist */,
 			);
 			path = swiftCameraAlbum;
-			sourceTree = "<group>";
-		};
-		5914065A1DEC3B4300FC3702 /* takepic */ = {
-			isa = PBXGroup;
-			children = (
-				591406481DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift */,
-				591406461DEC198900FC3702 /* TakePicListCollectionView.swift */,
-			);
-			name = takepic;
-			sourceTree = "<group>";
-		};
-		5914065B1DEC3B8100FC3702 /* AlbumView */ = {
-			isa = PBXGroup;
-			children = (
-				5914064E1DEC2E6100FC3702 /* DCAlbumListViewController.swift */,
-				5914064F1DEC2E6100FC3702 /* DCAlbumViewController.swift */,
-				591406521DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift */,
-				591406531DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib */,
-				591406541DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift */,
-				591406551DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib */,
-			);
-			name = AlbumView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +168,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */,
-				591406571DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.xib in Resources */,
+				5911636A1DEDB4F60001738D /* DCAlbumCollectionViewCell.xib in Resources */,
 				5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */,
-				591406591DEC2E9B00FC3702 /* DCAlbumTableViewCell.xib in Resources */,
+				5911636D1DEDB4F60001738D /* DCAlbumTableViewCell.xib in Resources */,
 				591406381DEC02D800FC3702 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,15 +182,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5911636E1DEDB4F60001738D /* DCAlbumViewController.swift in Sources */,
+				5911636C1DEDB4F60001738D /* DCAlbumTableViewCell.swift in Sources */,
 				591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */,
-				591406561DEC2E9B00FC3702 /* DCAlbumCollectionViewCell.swift in Sources */,
 				591406351DEC02D800FC3702 /* ViewController.swift in Sources */,
-				591406471DEC198900FC3702 /* TakePicListCollectionView.swift in Sources */,
-				591406501DEC2E6100FC3702 /* DCAlbumListViewController.swift in Sources */,
-				591406581DEC2E9B00FC3702 /* DCAlbumTableViewCell.swift in Sources */,
-				591406511DEC2E6100FC3702 /* DCAlbumViewController.swift in Sources */,
+				591163611DEDB4780001738D /* TakePicListCollectionViewCell.swift in Sources */,
+				591163691DEDB4F60001738D /* DCAlbumCollectionViewCell.swift in Sources */,
+				591163601DEDB4780001738D /* TakePicListCollectionView.swift in Sources */,
+				5911636B1DEDB4F60001738D /* DCAlbumListViewController.swift in Sources */,
 				591406331DEC02D800FC3702 /* AppDelegate.swift in Sources */,
-				5914064A1DEC1EFB00FC3702 /* TakePicListCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
