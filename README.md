@@ -15,6 +15,9 @@
 ###获取图片库
 ######DCCameraAlbum.shareCamera.getAlbumItem()
 
+###摄像头切换
+######DCCameraAlbum.shareCamera.beforeAfterCamera()
+
 ###闪光灯管理
 ######DCCameraAlbum.shareCamera.flashLamp(mode: .auto)
 
