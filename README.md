@@ -12,6 +12,9 @@
 ###拍摄图片
 ######DCCameraAlbum.shareCamera.takePhoto { [unowned self] (image) in }
 
+###新增图片入库 任意截取
+######func rotate() + func getImageFromImage()
+
 ###获取图片库
 ######DCCameraAlbum.shareCamera.getAlbumItem()
 
