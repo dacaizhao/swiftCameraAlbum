@@ -33,7 +33,7 @@ class ViewController: UIViewController {
         let size = CGSize(width: 100, height: 100)
         //默认的就是第一个
         //DCCameraAlbum.shareCamera.getAlbumItemFetchResultsDefault(thumbnailSize: size) { (imgarr) in}
-        DCCameraAlbum.shareCamera.getOriginalPicture(picAsset: <#T##PHAsset#>, finishedCallback: <#T##(UIImage) -> ()#>)
+        //DCCameraAlbum.shareCamera.getOriginalPicture(picAsset: <#T##PHAsset#>, finishedCallback: <#T##(UIImage) -> ()#>)
         
         //你还可以这样做 你可以查看任何一个相册  需要一定的等待时间 所以是回调
         let itemArr = DCCameraAlbum.shareCamera.getAlbumItem()
@@ -65,6 +65,11 @@ class ViewController: UIViewController {
             self.takePicListCollectionView.imgArr = self.imgArr
             
         }
+    }
+    
+    // MARK:- 镜头方向
+    @IBAction func postionClick(_ sender: UIButton) {
+        DCCameraAlbum.shareCamera.beforeAfterCamera()
     }
     
     // MARK:- 闪光灯管理

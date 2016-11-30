@@ -41,10 +41,20 @@
                                             <constraint firstAttribute="height" constant="46" id="h2G-uE-4h1"/>
                                         </constraints>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UgZ-3G-4rc">
+                                        <rect key="frame" x="20" y="58" width="108" height="30"/>
+                                        <color key="backgroundColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                                        <state key="normal" title="前后摄像头切换"/>
+                                        <connections>
+                                            <action selector="postionClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2Yr-HK-wgy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstItem="J4g-hT-nYK" firstAttribute="top" secondItem="FQ7-Lg-fbO" secondAttribute="top" constant="20" id="3PI-UA-SdL"/>
+                                    <constraint firstItem="UgZ-3G-4rc" firstAttribute="leading" secondItem="FQ7-Lg-fbO" secondAttribute="leading" constant="20" id="73K-zo-10i"/>
+                                    <constraint firstItem="UgZ-3G-4rc" firstAttribute="top" secondItem="J4g-hT-nYK" secondAttribute="bottom" constant="10" id="IL5-am-1wv"/>
                                     <constraint firstItem="Uqf-I4-nIR" firstAttribute="centerX" secondItem="FQ7-Lg-fbO" secondAttribute="centerX" id="P94-Us-BkV"/>
                                     <constraint firstItem="J4g-hT-nYK" firstAttribute="leading" secondItem="FQ7-Lg-fbO" secondAttribute="leading" constant="20" id="T5h-cg-9w2"/>
                                     <constraint firstItem="Uqf-I4-nIR" firstAttribute="centerY" secondItem="FQ7-Lg-fbO" secondAttribute="centerY" id="Xbg-bk-MGL"/>
