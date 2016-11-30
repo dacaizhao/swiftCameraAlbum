@@ -21,6 +21,7 @@
 		5914063A1DEC02D800FC3702 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 591406391DEC02D800FC3702 /* Assets.xcassets */; };
 		5914063D1DEC02D800FC3702 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5914063B1DEC02D800FC3702 /* LaunchScreen.storyboard */; };
 		591406451DEC050000FC3702 /* DCCameraAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 591406441DEC050000FC3702 /* DCCameraAlbum.swift */; };
+		5949E7C11DEEDB7E004651F5 /* UIImage-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5949E7C01DEEDB7E004651F5 /* UIImage-Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		5914063C1DEC02D800FC3702 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5914063E1DEC02D800FC3702 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		591406441DEC050000FC3702 /* DCCameraAlbum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DCCameraAlbum.swift; sourceTree = "<group>"; };
+		5949E7C01DEEDB7E004651F5 /* UIImage-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 		591406311DEC02D800FC3702 /* swiftCameraAlbum */ = {
 			isa = PBXGroup;
 			children = (
+				5949E7C01DEEDB7E004651F5 /* UIImage-Extension.swift */,
 				591406441DEC050000FC3702 /* DCCameraAlbum.swift */,
 				591406321DEC02D800FC3702 /* AppDelegate.swift */,
 				591406341DEC02D800FC3702 /* ViewController.swift */,
@@ -191,6 +194,7 @@
 				591163601DEDB4780001738D /* TakePicListCollectionView.swift in Sources */,
 				5911636B1DEDB4F60001738D /* DCAlbumListViewController.swift in Sources */,
 				591406331DEC02D800FC3702 /* AppDelegate.swift in Sources */,
+				5949E7C11DEEDB7E004651F5 /* UIImage-Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

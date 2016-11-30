@@ -205,12 +205,26 @@ extension DCCameraAlbum {
         imageOutput.captureStillImageAsynchronously(from: captureConnetion) { (imageBuffer, error) in
             let jpegData = AVCaptureStillImageOutput.jpegStillImageNSDataRepresentation(imageBuffer)
             let jpegImage = UIImage(data: jpegData!)
+            
+            //这里你可以 生成任意大小的图片
+            //jpegImage = jpegImage.rotate(aImage: jpegImage)
+            
             //图片入库
             UIImageWriteToSavedPhotosAlbum(jpegImage!, self,nil, nil)
             finishedCallback(jpegImage!)
         }
     }
+    
+    //图片中截取图片
+    func getImageFromImage(oldImage:UIImage,newImageRect:CGRect) ->UIImage {
+        let imageRef = oldImage.cgImage;
+        let subImageRef = imageRef!.cropping(to: newImageRect);
+        return UIImage(cgImage: subImageRef!)
+    }
+
 }
+
+
 
 // MARK: - 闪光灯
 extension DCCameraAlbum {
